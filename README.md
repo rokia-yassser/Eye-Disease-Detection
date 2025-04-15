@@ -65,16 +65,31 @@ Copy
 Edit
 Eye-Disease-Detection/
 │
+├── eye-disesae(1).ipynb 
 ├── app.py                  # Main Streamlit app
-├── new_model.h5           # Trained MobileNetV3 model
+├── new_model.keras         # Trained MobileNetV3 model
 ├── Recommendation.py      # Disease-specific advice
 ├── requirements.txt       # Project dependencies
 └── README.md              # You're here!
-📸 Demo
-Here’s a quick look at the app interface:
-![Screenshot_2025-04-15-10-31-02-53_99c04817c0de5652397fc8b56c3b3817](https://github.com/user-attachments/assets/15c3fcff-1885-4a54-99fa-6eabea69215e)
-![Screenshot_2025-04-15-10-31-28-40_99c04817c0de5652397fc8b56c3b3817](https://github.com/user-attachments/assets/c2bef1f4-dbac-4cd7-8d16-40c4f155c7c3)
+## 📸 Demo
 
+Here’s a quick look at the app interface:
+
+!(https://github.com/user-attachments/assets/15c3fcff-1885-4a54-99fa-6eabea69215e)
+
+!(https://github.com/user-attachments/assets/c2bef1f4-dbac-4cd7-8d16-40c4f155c7c3)
+
+## 📚 Dataset
+
+The model was trained using the **Retinal OCT Images Dataset** available on [Kaggle](https://www.kaggle.com/datasets/paultimothymooney/kermany2018).
+
+- The dataset contains labeled images for:
+  - CNV (Choroidal Neovascularization)
+  - DME (Diabetic Macular Edema)
+  - DRUSEN
+  - NORMAL
+
+📥 [Click here to view/download the dataset](https://www.kaggle.com/datasets/paultimothymooney/kermany2018)
 
 
 Author
