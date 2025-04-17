@@ -6,7 +6,7 @@ import numpy as np
 from Recommendation import cnv,dme,drusen,normal
 import tempfile
 
-model = load_model(r"D:\AI_ML\eye_disease\new_model.keras", compile=False)
+model = load_model(r"D:\AI_ML\eye_disease\new_model.keras")
 
 # def model_prediction(test_image_path):
 #     model = tf.keras.models.load_model(model)
@@ -28,7 +28,7 @@ def model_prediction(test_image_path):
     return np.argmax(predictions)
 
 
-st.sidebar.title('Dash Board')
+st.sidebar.title('DashBoard')
 
 app_mode = st.sidebar.selectbox("Select Page",["Home","About","Disease Identification"])
 if app_mode=="Home":
@@ -111,7 +111,7 @@ elif app_mode=="Disease Identification":
                 class_names = ['CNV', 'DME', 'DRUSEN', 'NORMAL']
                 prediction = class_names[result_index]
                 
-                st.image(test_image, caption="Uploaded Image", use_column_width=True)
+                st.image(test_image, caption="Uploaded Image", use_container_width=True)
                 st.success(f"Model is predicting it's a **{prediction}**")
 
 
