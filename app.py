@@ -6,7 +6,7 @@ import numpy as np
 from Recommendation import cnv,dme,drusen,normal
 import tempfile
 
-model = load_model(r"new_model.keras" ,compile=False)
+model = load_model("new_model.keras" ,compile=False)
 
 
 def model_prediction(test_image_path):
@@ -139,4 +139,5 @@ elif app_mode=="Disease Identification":
                     ''')
                     
                     st.markdown(normal)
+
 
