@@ -3,5 +3,5 @@ tensorflow==2.9.0
 matplotlib
 seaborn
 pandas
-numpy==1.21.6
+nnumpy>=1.23
 protobuf<=3.20.3
